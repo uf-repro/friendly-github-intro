@@ -1,0 +1,19 @@
+Package: friendlyGithubIntro
+Title: A Friendly Introduction to Github for Project Version Control
+Version: 0.0.1
+Authors@R: 
+    person(given = "Hao",
+           family = "Ye",
+           role = c("aut", "cre"),
+           email = "haoye@ufl.edu",
+           comment = c(ORCID = "0000-0002-8630-1458"))
+Description: What the package does (one paragraph).
+License: CC BY 4.0
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
+Imports:
+    xaringan,
+    xaringanthemer
+URL: https://github.com/uf-repro/friendly-github-intro
