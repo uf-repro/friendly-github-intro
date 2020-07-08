@@ -17,13 +17,13 @@ class: inverse, center, middle
 # A Friendly Introduction to Github for Project Version Control
 ### Hao Ye
 ### Health Science Center Libraries, University of Florida
-### (updated: 2020-07-07)
+### (updated: 2020-07-08)
 
 ---
 
 # Motivations
 
-Good record-keeping of your projects makes it easier to:
+Good practices in project management make tasks easier:
 * revert back to previous versions
 * interact with collaborators working on the same files
 * share your work and have it cited
@@ -41,6 +41,12 @@ By the end of the workshop, participants will be able to:
 
 ---
 
+class: inverse, center, middle
+
+# Version Control Concepts
+
+---
+
 # Version Control
 
 Tools/systems to manage changes to files.
@@ -53,13 +59,11 @@ Tools/systems to manage changes to files.
 
 ---
 
-# For *project* management
-
-What about?
+# What about *projects*?
 
 * changes that are not in MS Word
-* restoring a version of the project involving many different files
-* information about *who* and *why*
+* restoring multiple files that depend on each other
+* knowing *who* made changes and  *why*
 * multiple collaborators working on the same files
 
 ---
@@ -67,15 +71,150 @@ What about?
 # Example scenarios
 
 * You change a histogram to a bar plot, and then you are asked to change it back
-* Your collaborator makes edits while at a conference, and you need to merge the changes with your own
-* You want to experiment with a different dataset / analysis / narrative without duplicating all the files and keeping track of multiple copies of the project
+* Your collaborator makes edits while traveling, and you need to merge their changes with your own changes
+* You want to experiment with a different dataset / analysis / narrative without duplicating everything
+
+---
+
+class: inverse, center, middle
+
+# Git and GitHub
 
 ---
 
 # Git
 
+* software and version control system
+* notoriously unfriendly
+  - unintuitive command names
+  - obscure error messages
 
+--
 
+**This workshop is NOT about git!**
+* check out the resources page for tutorials, guides, etc.
+
+---
+
+# Git Concepts
+
+* Git tracks the history of a folder and its contents
+  - the folder is called a *repository* or *repo*
+* Versioning happens when you take a snapshot of repo:
+  - the snapshot is called a *commit*
+
+---
+
+# Commits
+
+* you *manually* include new files or files that have changed
+  - (Git stores information about changes)
+* each commit requires a *commit message*
+  - ideally summarizing the changes
+* commits also record *who* and *when* (automatically)
+
+---
+
+# GitHub
+
+* a cloud platform that hosts Git repos
+* free *public* and *private* repos
+* size limits:
+  - 1 GB for each repo
+  - 100 MB for individual files
+* [GitHub Education](https://education.github.com/pack) has some benefits
+  - but they have recently been making more features available for free anyway
+
+---
+
+class: inverse, center, middle
+
+# GitHub in a Web Browser
+
+---
+
+# Using GitHub
+
+* https://github.com
+* create an account / log in
+* create a new repo
+* upload files
+* write a commit message
+
+---
+
+class: center, middle
+
+# DEMO
+
+---
+
+class: inverse, center, middle
+
+# Using Git Clones
+
+---
+
+# Synchronizing Repos
+
+* Git repos can exist in multiple locations:
+  - *clone* = "make a copy of this Git repo"
+  - *push* = "send new commits from here to somewhere else"
+  - *pull* = "retrieve new commits from somewhere else to here"
+
+---
+
+# Working with Git clones
+
+* you need the `Git` software
+  - [instructions from Software Carpentry](https://carpentries.github.io/workshop-template/#git)
+  - [guide to command-line usage](https://swcarpentry.github.io/git-novice/)  
+    (too advanced for this workshop)
+
+--
+
+* [GitHub Desktop](https://desktop.github.com/)
+  - graphical interface for Git
+  - also syncs your computer with GitHub
+  
+---
+
+class: center, middle
+
+# DEMO
+
+---
+
+class: inverse, center, middle
+
+# Best Practices for Git Repos
+
+---
+
+# Readme
+
+* a `README.md` file in the top directory
+  - what is the project 
+
+---
+
+# License
+
+* a `LICENSE` file in the top directory
+  - how other people can *use* your content
+  - by default, in the US, you have full rights on creative works
+* select based on content type:
+  - MIT (permissive, code)
+  - CC-BY (permissive, non-code)
+  - CC0 (public-domain, data)
+  
+---
+
+# Adding a common open source license
+
+* when creating a repo on [github.com](https://github.com) or in GitHub Desktop, you can select a license template
+
+* in the web browser, adding a file named `LICENSE` brings up a button to "Choose a license template"
 
 ---
 
