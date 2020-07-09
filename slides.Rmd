@@ -8,6 +8,7 @@ output:
     lib_dir: libs
     css: xaringan-themer.css
     seal: false
+    fig_caption: false
     nature:
       highlightStyle: github
       highlightLines: true
@@ -36,7 +37,8 @@ style_mono_accent(
                    "li" = list("margin-block-start" = "0.5em", 
                               "margin-block-end" = "0.5em"), 
                    "pre" = list("margin-top" = "0.5em", 
-                              "margin-bottom" = "0.5em")), 
+                              "margin-bottom" = "0.5em"), 
+                   ".caption" = list("display" = "none")), 
   link_color = "#339944"
 )
 ```
@@ -51,7 +53,7 @@ class: inverse, center, middle
 
 # Motivations
 
-Good practices in project management make tasks easier:
+Good practices *save time* in project management:
 * revert back to previous versions
 * interact with collaborators working on the same files
 * share your work and have it cited
@@ -87,19 +89,19 @@ Tools/systems to manage changes to files.
 
 ---
 
-# What about *projects*?
+# Version Control is for *projects*
 
 * changes that are not in MS Word
-* restoring multiple files that depend on each other
+* restore a specific project state involving multiple files that have changed
 * knowing *who* made changes and  *why*
-* multiple collaborators working on the same files
+* handle multiple collaborators working on the same files
 
 ---
 
 # Example scenarios
 
-* You change a histogram to a bar plot, and then you are asked to change it back
-* Your collaborator makes edits while traveling, and you need to merge their changes with your own changes
+* You change a histogram to a bar plot, and then you want to change it back.
+* Your collaborator makes edits while traveling, and you need to merge their changes with your own changes.
 * You want to experiment with a different dataset / analysis / narrative without duplicating everything
 
 ---
@@ -126,32 +128,48 @@ class: inverse, center, middle
 
 # Git Concepts
 
-* Git tracks the history of a folder and its contents
+* Git tracks the history of a project folder and its contents
   - the folder is called a *repository* or *repo*
-* Versioning happens when you take a snapshot of repo:
+* Tracking of the changes occurs via taking a snapshot of repo:
   - the snapshot is called a *commit*
 
 ---
 
-# Commits
+```{r, echo = FALSE, fig.cap = "A screenshot of the website https://github.com/uf-repro/friendly-github-intro/commits/main, showing the commit log for the repo of *this* lesson. Each commit entry has an associated date and time, the author, and the summary of the commit message."}
+knitr::include_graphics("commits_example.png")
+```
 
-* you *manually* include new files or files that have changed
-  - (Git stores information about changes)
+---
+
+# Commit Contents
+
 * each commit requires a *commit message*
-  - ideally summarizing the changes
+  - 1-line summary
+  - blank line
+  - further details
 * commits also record *who* and *when* (automatically)
+
+---
+
+# Creating Commits
+
+* each commit is constructed *manually*
+* `add` files that have changed, or new files
+  - Git tracks information about changes between commits, so only the changed files need to be noted
+  - one common method is to add all the files in the repo 
+* manual commits give precise control over what is recorded in each version
 
 ---
 
 # GitHub
 
 * a cloud platform that hosts Git repos
-* free *public* and *private* repos
+* unlimited *public* and *private* repos
 * size limits:
   - 1 GB for each repo
   - 100 MB for individual files
 * [GitHub Education](https://education.github.com/pack) has some benefits
-  - but they have recently been making more features available for free anyway
+  - but many features are now free
 
 ---
 
@@ -186,7 +204,7 @@ class: inverse, center, middle
 # Synchronizing Repos
 
 * Git repos can exist in multiple locations:
-  - *clone* = "make a copy of this Git repo"
+  - *clone* = "make a copy of a Git repo"
   - *push* = "send new commits from here to somewhere else"
   - *pull* = "retrieve new commits from somewhere else to here"
 
@@ -222,7 +240,10 @@ class: inverse, center, middle
 # Readme
 
 * a `README.md` file in the top directory
-  - what is the project 
+  - what the project is about
+  - who is working on it
+  - who is it for
+  - installation/usage instructions
 
 ---
 
@@ -238,11 +259,33 @@ class: inverse, center, middle
   
 ---
 
-# Adding a common open source license
+# Adding a license
 
-* when creating a repo on [github.com](https://github.com) or in GitHub Desktop, you can select a license template
+* when creating a new repo, you have the option of choosing the template for an existing license
 
-* in the web browser, adding a file named `LICENSE` brings up a button to "Choose a license template"
+* on [github.com](https://github.com), adding a file named `LICENSE` brings up a button:
+
+--
+
+```{r, echo = FALSE, fig.cap = "An animation of adding a file named `LICENSE` in the github.com interface, and then being able to click on a `Choose a License` button"}
+knitr::include_graphics("choose-a-license.gif")
+```
+
+---
+
+# Markdown
+
+* GitHub will render some common file formats directly in the web browser:
+  - images, plain text
+* markdown is preferred for formatting text and images
+  - uses plain text, but renders nicely
+  - [a guide to syntax](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+---
+
+```{r, echo = FALSE, fig.cap = "A screenshot of the website https://github.com/weecology/MATSSdemo/blob/master/analysis/report.md, showing a markdown report with formatted text and embedded figures."}
+knitr::include_graphics("markdown_example.png")
+```
 
 ---
 
