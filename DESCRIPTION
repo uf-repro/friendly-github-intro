@@ -1,13 +1,13 @@
 Package: friendlyGithubIntro
 Title: A Friendly Introduction to Github for Project Version Control
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: 
     person(given = "Hao",
            family = "Ye",
            role = c("aut", "cre"),
            email = "haoye@ufl.edu",
            comment = c(ORCID = "0000-0002-8630-1458"))
-Description: What the package does (one paragraph).
+Description: Github is a cloud-based platform commonly used to host open-source coding project... this workshop will introduce how it can be used more broadly to back-up your research projects, collaborate within your lab and with remote colleagues, and even practice open science by (optionally) sharing your research project publicly.
 License: CC BY 4.0
 Encoding: UTF-8
 LazyData: true
