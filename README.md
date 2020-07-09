@@ -20,3 +20,4 @@ By the end of the workshop, participants will be able to:
 
 ## References
 
+* ["Friendly Github Workshop"](https://kirstiejane.github.io/friendly-github-intro/) from Kirstie Jane Whitaker
