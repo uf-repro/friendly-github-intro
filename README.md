@@ -10,6 +10,8 @@
 
 Github is a cloud-based platform commonly used to host open-source coding project... this workshop will introduce how it can be used more broadly to back-up your research projects, collaborate within your lab and with remote colleagues, and even practice open science by (optionally) sharing your research project publicly.
 
+*This workshop is open to everyone; NO previous experience with programming/git/command-line is required.*
+
 ## Learning Outcomes
 
 By the end of the workshop, participants will be able to:
