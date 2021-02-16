@@ -1,14 +1,14 @@
 {
-"title": "A Friendly Introduction to Github for Project Version Control",
-"creators": [
+  "title": "A Friendly Introduction to Github for Project Version Control",
+  "creators": [
     {
       "affiliation": "University of Florida",
       "name": "Hao Ye",
       "orcid": "0000-0002-8630-1458"
     }
-],
-    "description": "Github is a cloud-based platform commonly used to host open-source coding project... this workshop will introduce how it can be used more broadly to back-up your research projects, collaborate within your lab and with remote colleagues, and even practice open science by (optionally) sharing your research project publicly.",
-    "keywords": [
+  ],
+  "description": "Github is a cloud-based platform commonly used to host open-source coding project... this workshop will introduce how it can be used more broadly to back-up your research projects, collaborate within your lab and with remote colleagues, and even practice open science by (optionally) sharing your research project publicly.",
+  "keywords": [
     "Open Educational Resources",
     "Research Support Skills",
     "Git",
@@ -16,7 +16,7 @@
     "Version Control",
     "Workshop"
   ],
-    "access_right": "open",
-    "license": "CC-BY-4.0",
-    "upload_type": "lesson"
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "upload_type": "lesson"
 }

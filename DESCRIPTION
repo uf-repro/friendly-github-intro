@@ -18,3 +18,8 @@ Imports:
     xaringan,
     xaringanthemer
 URL: https://github.com/uf-repro/friendly-github-intro
+learningOutcomes: * explain the benefits of version control
+ * articulate the differences between `git` and `Github`
+ * create and update repositories using Github Desktop and the Github website
+ * write descriptive README files
+ * select and apply a license to a GitHub project
