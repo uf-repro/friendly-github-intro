@@ -44,6 +44,8 @@
 
 
 
+
+
 <!-- mathjax -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script>
@@ -55,9 +57,15 @@
 
 
 
+  
+
+  
+
   </head>
 
   <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-title-body">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -96,13 +104,13 @@
 </li>
 <li>
   <a href="index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
+    <span class="fas fa-home fa-lg"></span>
      
   </a>
 </li>
 <li>
   <a href="https://github.com/uf-repro/friendly-github-intro/">
-    <span class="fab fa fab fa-github fa-lg"></span>
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -124,21 +132,19 @@
 
 <div id="syllabus" class="section level1">
 
-<p>Hao Ye Health Science Center Libraries, University of Florida (updated: 2020-11-26)</p>
+<p>Hao Ye Health Science Center Libraries, University of Florida (updated: 2021-02-16)</p>
 <div id="intro" class="section level2">
 <h2 class="hasAnchor">
 <a href="#intro" class="anchor"></a>Intro</h2>
 <ul>
-<li>
-<p>Motivations Good practices <em>save time</em> in project management:</p>
+<li>Motivations Good practices <em>save time</em> in project management:
 <ul>
 <li>revert back to previous versions</li>
 <li>interact with collaborators working on the same files</li>
 <li>share your work and have it cited</li>
 </ul>
 </li>
-<li>
-<p>Learning Outcomes By the end of the workshop, participants will be able to:</p>
+<li>Learning Outcomes By the end of the workshop, participants will be able to:
 <ul>
 <li>explain the benefits of version control</li>
 <li>articulate the differences between <code>git</code> and <code>Github</code>
@@ -148,17 +154,14 @@
 <li>select and apply a license to a GitHub project</li>
 </ul>
 </li>
-<li><p>Version Control Concepts</p></li>
-<li>
-<p>Version Control Tools/systems to manage changes to files. –</p>
-<h2 id="so-what">So what?</h2>
+<li>Version Control Concepts</li>
+<li>Version Control Tools/systems to manage changes to files. ## So what?
 <ul>
 <li>MS Word has “track changes”</li>
 <li>Dropbox / Google Drive can revert versions</li>
 </ul>
 </li>
-<li>
-<p>Version Control is for <em>projects</em></p>
+<li>Version Control is for <em>projects</em>
 <ul>
 <li>changes that are not in MS Word</li>
 <li>restore a specific project state involving multiple files that have changed</li>
@@ -167,33 +170,28 @@
 <li>handle multiple collaborators working on the same files</li>
 </ul>
 </li>
-<li>
-<p>Example scenarios</p>
+<li>Example scenarios
 <ul>
 <li>You change a histogram to a bar plot, and then you want to change it back.</li>
 <li>Your collaborator makes edits while traveling, and you need to merge their changes with your own changes.</li>
 <li>You want to experiment with a different dataset / analysis / narrative without duplicating everything</li>
 </ul>
 </li>
-<li><p>Git and GitHub</p></li>
-<li>
-<p>Git</p>
+<li>Git and GitHub</li>
+<li>Git
 <ul>
 <li>software and version control system</li>
 <li>notoriously unfriendly
 <ul>
 <li>unintuitive command names</li>
-<li>
-<h2 id="obscure-error-messages">obscure error messages</h2>
-<strong>This workshop is NOT about git!</strong>
+<li>obscure error messages <strong>This workshop is NOT about git!</strong>
 </li>
 </ul>
 </li>
 <li>check out the resources page for tutorials, guides, etc.</li>
 </ul>
 </li>
-<li>
-<p>Git Concepts</p>
+<li>Git Concepts
 <ul>
 <li>Git tracks the history of a project folder and its contents
 <ul>
@@ -209,8 +207,7 @@
 </li>
 </ul>
 </li>
-<li>
-<p>Commit Contents</p>
+<li>Commit Contents
 <ul>
 <li>each commit requires a <em>commit message</em>
 <ul>
@@ -222,8 +219,7 @@
 <li>commits also record <em>who</em> and <em>when</em> (automatically)</li>
 </ul>
 </li>
-<li>
-<p>Creating Commits</p>
+<li>Creating Commits
 <ul>
 <li>each commit is constructed <em>manually</em>
 </li>
@@ -237,8 +233,7 @@
 <li>manual commits give precise control over what is recorded in each version</li>
 </ul>
 </li>
-<li>
-<p>GitHub</p>
+<li>GitHub
 <ul>
 <li>a cloud platform that hosts Git repos</li>
 <li>unlimited <em>public</em> and <em>private</em> repos</li>
@@ -256,21 +251,19 @@
 </li>
 </ul>
 </li>
-<li><p>GitHub in a Web Browser</p></li>
-<li>
-<p>Using GitHub</p>
+<li>GitHub in a Web Browser</li>
+<li>Using GitHub
 <ul>
-<li><a href="https://github.com" class="uri">https://github.com</a></li>
+<li>https://github.com</li>
 <li>create an account / log in</li>
 <li>create a new repo</li>
 <li>upload files</li>
 <li>write a commit message</li>
 </ul>
 </li>
-<li><p>DEMO</p></li>
-<li><p>Using Git Clones</p></li>
-<li>
-<p>Synchronizing Repos</p>
+<li>DEMO</li>
+<li>Using Git Clones</li>
+<li>Synchronizing Repos
 <ul>
 <li>Git repos can exist in multiple locations:
 <ul>
@@ -284,15 +277,14 @@
 </li>
 </ul>
 </li>
-<li>
-<p>Working with Git clones</p>
+<li>Working with Git clones
 <ul>
 <li>you need the <code>Git</code> software
 <ul>
 <li><a href="https://carpentries.github.io/workshop-template/#git">instructions from Software Carpentry</a></li>
 <li>
 <a href="https://swcarpentry.github.io/git-novice/">guide to command-line usage</a><br>
-(too advanced for this workshop) –</li>
+(too advanced for this workshop)</li>
 </ul>
 </li>
 <li>
@@ -304,10 +296,9 @@
 </li>
 </ul>
 </li>
-<li><p>DEMO</p></li>
-<li><p>Best Practices for Git Repos</p></li>
-<li>
-<p>Readme</p>
+<li>DEMO</li>
+<li>Best Practices for Git Repos</li>
+<li>Readme
 <ul>
 <li>a <code>README.md</code> file in the top directory
 <ul>
@@ -319,8 +310,7 @@
 </li>
 </ul>
 </li>
-<li>
-<p>License</p>
+<li>License
 <ul>
 <li>a <code>LICENSE</code> file in the top directory
 <ul>
@@ -337,18 +327,14 @@
 </li>
 </ul>
 </li>
-<li>
-<p>Adding a license</p>
+<li>Adding a license
 <ul>
 <li>when creating a new repo, you have the option of choosing the template for an existing license</li>
-<li>
-<h2 id="on-githubcom-adding-a-file-named-license-brings-up-a-button">on <a href="https://github.com">github.com</a>, adding a file named <code>LICENSE</code> brings up a button:</h2>
-<img src="choose-a-license.gif" alt="An animation of adding a file named LICENSE in the github.com interface, and then being able to click on a Choose a License button">
+<li>on <a href="https://github.com">github.com</a>, adding a file named <code>LICENSE</code> brings up a button: <img src="choose-a-license.gif" alt="An animation of adding a file named LICENSE in the github.com interface, and then being able to click on a Choose a License button">
 </li>
 </ul>
 </li>
-<li>
-<p>Markdown</p>
+<li>Markdown
 <ul>
 <li>GitHub will render some common file formats directly in the web browser:
 <ul>
@@ -375,7 +361,7 @@
 <li>Contact me for additional questions or consultation requests!</li>
 <li>Check back in on the libguide for more modules and contact info:
 <ul>
-<li><a href="https://guides.uflib.ufl.edu/reproducibility" class="uri">https://guides.uflib.ufl.edu/reproducibility</a></li>
+<li>https://guides.uflib.ufl.edu/reproducibility</li>
 </ul>
 </li>
 </ul>
@@ -408,6 +394,8 @@
 
   
 
+
+  
 
   </body>
 </html>

@@ -63,11 +63,8 @@ Good practices *save time* in project management:
 # Learning Outcomes
 
 By the end of the workshop, participants will be able to:
-* explain the benefits of version control
-* articulate the differences between `git` and `Github`
-* create and update repositories using Github Desktop and the Github website
-* write descriptive README files
-* select and apply a license to a GitHub project
+
+`r gsub("\n ", "\n", desc::desc_get("learningOutcomes"))`
 
 ---
 
