@@ -88,9 +88,6 @@
         <li>
   <a></a>
 </li>
-<li>
-  <a></a>
-</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
@@ -132,7 +129,7 @@
 
 <div id="syllabus" class="section level1">
 
-<p>Hao Ye Health Science Center Libraries, University of Florida (updated: 2021-02-16)</p>
+<p>Hao Ye Health Science Center Libraries, University of Florida (updated: 2021-03-02)</p>
 <div id="intro" class="section level2">
 <h2 class="hasAnchor">
 <a href="#intro" class="anchor"></a>Intro</h2>
@@ -155,16 +152,16 @@
 </ul>
 </li>
 <li>Version Control Concepts</li>
-<li>Version Control Tools/systems to manage changes to files. ## So what?
+<li>Version Control Tools/systems to manage changes to files. ## You are probably already using version control!
 <ul>
 <li>MS Word has “track changes”</li>
 <li>Dropbox / Google Drive can revert versions</li>
 </ul>
 </li>
-<li>Version Control is for <em>projects</em>
+<li>Why learn GitHub? GitHub is version control for <strong>projects</strong>:
 <ul>
-<li>changes that are not in MS Word</li>
-<li>restore a specific project state involving multiple files that have changed</li>
+<li>changes that are not in MS Word files</li>
+<li>restore a specific project state, involving multiple files that have changed</li>
 <li>knowing <em>who</em> made changes and <em>why</em>
 </li>
 <li>handle multiple collaborators working on the same files</li>
@@ -173,35 +170,35 @@
 <li>Example scenarios
 <ul>
 <li>You change a histogram to a bar plot, and then you want to change it back.</li>
-<li>Your collaborator makes edits while traveling, and you need to merge their changes with your own changes.</li>
-<li>You want to experiment with a different dataset / analysis / narrative without duplicating everything</li>
+<li>Your collaborator makes edits while traveling, and you need to combine their changes with changes you made in the meantime.</li>
+<li>You want to experiment with a different dataset / analysis / narrative without duplicating everything.</li>
 </ul>
 </li>
-<li>Git and GitHub</li>
+<li>Git and GitHub ## (not the same thing!)</li>
 <li>Git
 <ul>
 <li>software and version control system</li>
 <li>notoriously unfriendly
 <ul>
 <li>unintuitive command names</li>
-<li>obscure error messages <strong>This workshop is NOT about git!</strong>
+<li>obscure error messages <strong>This workshop does NOT teach you to use Git directly!</strong>
 </li>
 </ul>
 </li>
-<li>check out the resources page for tutorials, guides, etc.</li>
+<li>check out the <a href="https://uf-repro.github.io/friendly-github-intro/resources.html" class="external-link">resources page</a> for tutorials, guides, etc.</li>
 </ul>
 </li>
 <li>Git Concepts
 <ul>
-<li>Git tracks the history of a project folder and its contents
+<li>Git tracks a project folder, and changes to all its contents
 <ul>
 <li>the folder is called a <em>repository</em> or <em>repo</em>
 </li>
 </ul>
 </li>
-<li>Tracking of the changes occurs via taking a snapshot of repo:
+<li>Tracking changes occurs via taking a snapshot of repo:
 <ul>
-<li>the snapshot is called a <em>commit</em> <img src="commits_example.png" alt="A screenshot of the website https://github.com/uf-repro/friendly-github-intro/commits/main, showing the commit log for the repo of this lesson. Each commit entry has an associated date and time, the author, and the summary of the commit message.">
+<li>each snapshot is called a <em>commit</em> <img src="commits_example.png" alt="A screenshot of the website https://github.com/uf-repro/friendly-github-intro/commits/main, showing the commit log for the repo of this lesson. Each commit entry has an associated date and time, the author, and the summary of the commit message.">
 </li>
 </ul>
 </li>
@@ -216,7 +213,8 @@
 <li>further details</li>
 </ul>
 </li>
-<li>commits also record <em>who</em> and <em>when</em> (automatically)</li>
+<li>commits also record <em>who</em> and <em>when</em> (automatically) <img src="commits_example.png" alt="A screenshot of the website https://github.com/uf-repro/friendly-github-intro/commits/main, showing the commit log for the repo of this lesson. Each commit entry has an associated date and time, the author, and the summary of the commit message.">
+</li>
 </ul>
 </li>
 <li>Creating Commits
@@ -224,13 +222,13 @@
 <li>each commit is constructed <em>manually</em>
 </li>
 <li>
-<code>add</code> files that have changed, or new files
+<code>add</code> files that have changed (including new files)
 <ul>
-<li>Git tracks information about changes between commits, so only the changed files need to be noted</li>
+<li>Git tracks changes only, so only the changed files need to be noted</li>
 <li>one common method is to add all the files in the repo</li>
 </ul>
 </li>
-<li>manual commits give precise control over what is recorded in each version</li>
+<li>this method is annoying, but gives you precise control over what changes to record</li>
 </ul>
 </li>
 <li>GitHub
@@ -244,17 +242,16 @@
 </ul>
 </li>
 <li>
-<a href="https://education.github.com/pack">GitHub Education</a> has some benefits
+<a href="https://education.github.com/pack" class="external-link">GitHub Education</a> has some benefits
 <ul>
-<li>but many features are now free</li>
+<li>one code for a free t-shirt from https://github.myshopify.com/ to be given away to a random attendee</li>
 </ul>
 </li>
 </ul>
 </li>
 <li>GitHub in a Web Browser</li>
-<li>Using GitHub
+<li>Using GitHub https://github.com
 <ul>
-<li>https://github.com</li>
 <li>create an account / log in</li>
 <li>create a new repo</li>
 <li>upload files</li>
@@ -265,7 +262,7 @@
 <li>Using Git Clones</li>
 <li>Synchronizing Repos
 <ul>
-<li>Git repos can exist in multiple locations:
+<li>Git is designed to be decentralized–repos can exist in multiple locations:
 <ul>
 <li>
 <em>clone</em> = “make a copy of a Git repo”</li>
@@ -281,14 +278,14 @@
 <ul>
 <li>you need the <code>Git</code> software
 <ul>
-<li><a href="https://carpentries.github.io/workshop-template/#git">instructions from Software Carpentry</a></li>
+<li><a href="https://carpentries.github.io/workshop-template/#git" class="external-link">instructions from Software Carpentry</a></li>
 <li>
-<a href="https://swcarpentry.github.io/git-novice/">guide to command-line usage</a><br>
+<a href="https://swcarpentry.github.io/git-novice/" class="external-link">guide to command-line usage</a><br>
 (too advanced for this workshop)</li>
 </ul>
 </li>
 <li>
-<a href="https://desktop.github.com/">GitHub Desktop</a>
+<a href="https://desktop.github.com/" class="external-link">GitHub Desktop</a>
 <ul>
 <li>graphical interface for Git</li>
 <li>also syncs your computer with GitHub</li>
@@ -330,7 +327,7 @@
 <li>Adding a license
 <ul>
 <li>when creating a new repo, you have the option of choosing the template for an existing license</li>
-<li>on <a href="https://github.com">github.com</a>, adding a file named <code>LICENSE</code> brings up a button: <img src="choose-a-license.gif" alt="An animation of adding a file named LICENSE in the github.com interface, and then being able to click on a Choose a License button">
+<li>on <a href="https://github.com" class="external-link">github.com</a>, adding a file named <code>LICENSE</code> brings up a button: <img src="choose-a-license.gif" alt="An animation of adding a file named LICENSE in the github.com interface, and then being able to click on a Choose a License button">
 </li>
 </ul>
 </li>
@@ -345,7 +342,7 @@
 <ul>
 <li>uses plain text, but renders nicely</li>
 <li>
-<a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">a guide to syntax</a> <img src="markdown_example.png" alt="A screenshot of the website https://github.com/weecology/MATSSdemo/blob/master/analysis/report.md, showing a markdown report with formatted text and embedded figures.">
+<a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" class="external-link">a guide to syntax</a> <img src="markdown_example.png" alt="A screenshot of the website https://github.com/weecology/MATSSdemo/blob/master/analysis/report.md, showing a markdown report with formatted text and embedded figures.">
 </li>
 </ul>
 </li>
@@ -382,11 +379,11 @@
 
       <footer>
       <div class="copyright">
-  <p>Developed by Hao Ye.</p>
+  <p><p>Developed by Hao Ye.</p></p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.9000.</p>
+  <p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 1.6.1.9000.</p></p>
 </div>
 
       </footer>

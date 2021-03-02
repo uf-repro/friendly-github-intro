@@ -17,7 +17,7 @@ class: inverse, center, middle
 # A Friendly Introduction to Github for Project Version Control
 ### Hao Ye
 ### Health Science Center Libraries, University of Florida
-### (updated: 2021-02-16)
+### (updated: 2021-03-02)
 
 ---
 
@@ -53,17 +53,19 @@ class: inverse, center, middle
 Tools/systems to manage changes to files.
 
 --
-## So what?
+## You are probably already using version control!
 
 * MS Word has "track changes"
 * Dropbox / Google Drive can revert versions
 
 ---
 
-# Version Control is for *projects*
+# Why learn GitHub?
 
-* changes that are not in MS Word
-* restore a specific project state involving multiple files that have changed
+GitHub is version control for **projects**:
+
+* changes that are not in MS Word files
+* restore a specific project state, involving multiple files that have changed
 * knowing *who* made changes and  *why*
 * handle multiple collaborators working on the same files
 
@@ -72,14 +74,17 @@ Tools/systems to manage changes to files.
 # Example scenarios
 
 * You change a histogram to a bar plot, and then you want to change it back.
-* Your collaborator makes edits while traveling, and you need to merge their changes with your own changes.
-* You want to experiment with a different dataset / analysis / narrative without duplicating everything
+* Your collaborator makes edits while traveling, and you need to combine their changes with changes you made in the meantime.
+* You want to experiment with a different dataset / analysis / narrative without duplicating everything.
 
 ---
 
 class: inverse, center, middle
 
 # Git and GitHub
+--
+
+## (not the same thing!)
 
 ---
 
@@ -92,17 +97,17 @@ class: inverse, center, middle
 
 --
 
-**This workshop is NOT about git!**
-* check out the resources page for tutorials, guides, etc.
+**This workshop does NOT teach you to use Git directly!**
+* check out the [resources page](https://uf-repro.github.io/friendly-github-intro/resources.html) for tutorials, guides, etc.
 
 ---
 
 # Git Concepts
 
-* Git tracks the history of a project folder and its contents
+* Git tracks a project folder, and changes to all its contents
   - the folder is called a *repository* or *repo*
-* Tracking of the changes occurs via taking a snapshot of repo:
-  - the snapshot is called a *commit*
+* Tracking changes occurs via taking a snapshot of repo:
+  - each snapshot is called a *commit*
 
 ---
 
@@ -120,13 +125,17 @@ class: inverse, center, middle
 
 ---
 
+![A screenshot of the website https://github.com/uf-repro/friendly-github-intro/commits/main, showing the commit log for the repo of *this* lesson. Each commit entry has an associated date and time, the author, and the summary of the commit message.](commits_example.png)
+
+---
+
 # Creating Commits
 
 * each commit is constructed *manually*
-* `add` files that have changed, or new files
-  - Git tracks information about changes between commits, so only the changed files need to be noted
+* `add` files that have changed (including new files)
+  - Git tracks changes only, so only the changed files need to be noted
   - one common method is to add all the files in the repo 
-* manual commits give precise control over what is recorded in each version
+* this method is annoying, but gives you precise control over what changes to record
 
 ---
 
@@ -138,7 +147,8 @@ class: inverse, center, middle
   - 1 GB for each repo
   - 100 MB for individual files
 * [GitHub Education](https://education.github.com/pack) has some benefits
-  - but many features are now free
+  - one code for a free t-shirt from https://github.myshopify.com/ to be given away to a random attendee
+  
 
 ---
 
@@ -150,7 +160,7 @@ class: inverse, center, middle
 
 # Using GitHub
 
-* https://github.com
+https://github.com
 * create an account / log in
 * create a new repo
 * upload files
@@ -172,7 +182,7 @@ class: inverse, center, middle
 
 # Synchronizing Repos
 
-* Git repos can exist in multiple locations:
+* Git is designed to be decentralized--repos can exist in multiple locations:
   - *clone* = "make a copy of a Git repo"
   - *push* = "send new commits from here to somewhere else"
   - *pull* = "retrieve new commits from somewhere else to here"
