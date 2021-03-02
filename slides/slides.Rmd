@@ -253,6 +253,7 @@ class: inverse, center, middle
   - who is working on it
   - who is it for
   - installation/usage instructions
+  - citation info
 
 ---
 

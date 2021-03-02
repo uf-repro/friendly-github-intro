@@ -1,6 +1,6 @@
 Package: friendlyGithubIntro
 Title: A Friendly Introduction to Github for Project Version Control
-Version: 1.0.2
+Version: 1.1.0
 Authors@R: 
     person(given = "Hao",
            family = "Ye",
