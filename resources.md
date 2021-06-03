@@ -4,6 +4,7 @@
 
 * ["Git for humans"](https://speakerdeck.com/alicebartlett/git-for-humans)
   - slides from Alice Bartlett on the essential *concepts* of Git
+  - [video](https://www.youtube.com/watch?v=eWxxfttcMts)
 
 * ["How to Write a Git Commit Message"](https://chris.beams.io/posts/git-commit/)
   - blogpost from Chris Beams about writing good commit messages
