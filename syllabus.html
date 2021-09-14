@@ -129,12 +129,12 @@
 
 <div id="syllabus" class="section level1">
 
-<p>Hao Ye Health Science Center Libraries, University of Florida (updated: 2021-06-03)</p>
+<p>Hao Ye Health Science Center Libraries, University of Florida (updated: 2021-09-14)</p>
 <div id="intro" class="section level2">
 <h2 class="hasAnchor">
 <a href="#intro" class="anchor" aria-hidden="true"></a>Intro</h2>
 <ul>
-<li>Motivations Good practices <em>save time</em> in project management:
+<li>Motivations Good practices <em>save time</em> in project management and make it easy to:
 <ul>
 <li>revert back to previous versions</li>
 <li>interact with collaborators working on the same files</li>
@@ -155,33 +155,35 @@
 <li>Version Control Tools/systems to manage changes to files. ## You are probably already using version control!
 <ul>
 <li>MS Word has “track changes”</li>
-<li>Dropbox / Google Drive can revert versions</li>
+<li>Dropbox / Google Drive / OneDrive can show previous versions</li>
 </ul>
 </li>
-<li>Why learn GitHub? GitHub is version control for <strong>projects</strong>:
+<li>What’s special about GitHub? GitHub is version control for <strong>projects</strong>. Use cases:
 <ul>
 <li>changes that are not in MS Word files</li>
-<li>restore a specific project state, involving multiple files that have changed</li>
+<li>find a specific version of the project (with many different files/folders)</li>
 <li>knowing <em>who</em> made changes and <em>why</em>
 </li>
-<li>handle multiple collaborators working on the same files</li>
+<li>multiple collaborators working at the same time</li>
 </ul>
 </li>
 <li>Example scenarios
 <ul>
 <li>You change a histogram to a bar plot, and then you want to change it back.</li>
-<li>Your collaborator makes edits while traveling, and you need to combine their changes with changes you made in the meantime.</li>
-<li>You want to experiment with a different dataset / analysis / narrative without duplicating everything.</li>
+<li>Your co-author makes edits while traveling, and you need to combine their changes with changes you made in the meantime.</li>
+<li>You want to experiment with a different dataset / analysis / narrative without duplicating everything. <strong>GitHub helps you do all of these!</strong>
+</li>
 </ul>
 </li>
 <li>Git and GitHub ## (not the same thing!)</li>
 <li>Git
 <ul>
-<li>software and version control system</li>
+<li>
+<code>Git</code> is the name of the software and version control system</li>
 <li>notoriously unfriendly
 <ul>
-<li>unintuitive command names</li>
-<li>obscure error messages <strong>This workshop does NOT teach you to use Git directly!</strong>
+<li>commands have unintuitive names</li>
+<li>error messages are obscure <strong>This workshop does NOT teach you to use Git directly!</strong>
 </li>
 </ul>
 </li>
@@ -190,26 +192,27 @@
 </li>
 <li>Git Concepts
 <ul>
-<li>Git tracks a project folder, and changes to all its contents
+<li>In Git, a project is a folder
 <ul>
 <li>the folder is called a <em>repository</em> or <em>repo</em>
 </li>
+<li>Git tracks changes to all files and subfolders of that folder</li>
 </ul>
 </li>
-<li>Tracking changes occurs via taking a snapshot of repo:
+<li>Project changes are tracked by taking snapshots:
 <ul>
-<li>each snapshot is called a <em>commit</em> <img src="commits_example.png" alt="A screenshot of the website https://github.com/uf-repro/friendly-github-intro/commits/main, showing the commit log for the repo of this lesson. Each commit entry has an associated date and time, the author, and the summary of the commit message.">
+<li>each snapshot is called a <em>commit</em> and represents a specific project version <img src="commits_example.png" alt="A screenshot of the website https://github.com/uf-repro/friendly-github-intro/commits/main, showing the commit log for the repo of this lesson. Each commit entry has an associated date and time, the author, and the summary of the commit message.">
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Commit Contents
+<li>About Commits
 <ul>
-<li>each commit requires a <em>commit message</em>
+<li>each commit has a <em>commit message</em>
 <ul>
-<li>1-line summary</li>
-<li>blank line</li>
+<li>1-line summary (required)</li>
+<li>blank line (optional)</li>
 <li>further details</li>
 </ul>
 </li>
@@ -220,21 +223,23 @@
 <li>Creating Commits
 <ul>
 <li>each commit is constructed <em>manually</em>
+<ul>
+<li>can be tedious, but gives you precise control over what changes to record</li>
+</ul>
 </li>
 <li>
 <code>add</code> files that have changed (including new files)
 <ul>
-<li>Git tracks changes only, so only the changed files need to be noted</li>
+<li>Git only records changes, so only the changed files need to be noted</li>
 <li>one common method is to add all the files in the repo</li>
 </ul>
 </li>
-<li>this method is annoying, but gives you precise control over what changes to record</li>
 </ul>
 </li>
 <li>GitHub
 <ul>
 <li>a cloud platform that hosts Git repos</li>
-<li>unlimited <em>public</em> and <em>private</em> repos</li>
+<li>can host unlimited # of <em>public</em> and <em>private</em> repos</li>
 <li>size limits:
 <ul>
 <li>1 GB for each repo</li>
@@ -254,15 +259,16 @@
 <ul>
 <li>create an account / log in</li>
 <li>create a new repo</li>
-<li>upload files</li>
+<li>add text files (in browser) or upload files</li>
 <li>write a commit message</li>
 </ul>
 </li>
 <li>DEMO</li>
 <li>Using Git Clones</li>
+<li>About Clones If you want to backup files, you can make a copy to another location (external drive, cloud storage, etc.). What about a project folder AND its history? A <strong>git clone</strong> is not just a copy of the project files, but also its entire history.</li>
 <li>Synchronizing Repos
 <ul>
-<li>Git is designed to be decentralized–repos can exist in multiple locations:
+<li>Git is designed to be decentralized – repos can exist in multiple locations:
 <ul>
 <li>
 <em>clone</em> = “make a copy of a Git repo”</li>
@@ -295,9 +301,7 @@
 </li>
 <li>DEMO</li>
 <li>Best Practices for Git Repos</li>
-<li>Readme
-<ul>
-<li>a <code>README.md</code> file in the top directory
+<li>Readme A <code>README.md</code> file in the primary folder shows on the github webpage for the repo. It should include:
 <ul>
 <li>what the project is about</li>
 <li>who is working on it</li>
@@ -306,20 +310,12 @@
 <li>citation info</li>
 </ul>
 </li>
-</ul>
-</li>
-<li>License
+<li>License A <code>LICENSE</code> file in the top directory describes how other people can <em>use</em> the work.
 <ul>
-<li>a <code>LICENSE</code> file in the top directory
+<li>by default, in the US, you have full rights on creative works Recommended permissive licenses, based on content type:
 <ul>
-<li>how other people can <em>use</em> your content</li>
-<li>by default, in the US, you have full rights on creative works</li>
-</ul>
-</li>
-<li>select based on content type:
-<ul>
-<li>MIT (permissive, code)</li>
-<li>CC-BY (permissive, non-code)</li>
+<li>MIT (code)</li>
+<li>CC-BY (non-code)</li>
 <li>CC0 (public-domain, data)</li>
 </ul>
 </li>
