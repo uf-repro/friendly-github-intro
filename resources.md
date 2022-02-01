@@ -6,6 +6,9 @@
   - slides from Alice Bartlett on the essential *concepts* of Git
   - [video](https://www.youtube.com/watch?v=eWxxfttcMts)
 
+* [Git & GitHub Through GitKraken - From Zero to Hero!](https://srse-git-github-zero2hero.netlify.app/)
+  - full tutorial from Anna Krystalli and the University of Sheffield RSE group on getting started with git and github
+
 * ["How to Write a Git Commit Message"](https://chris.beams.io/posts/git-commit/)
   - blogpost from Chris Beams about writing good commit messages
 
