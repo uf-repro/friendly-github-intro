@@ -53,7 +53,7 @@ class: inverse, center, middle
 
 # Motivations
 
-Good practices *save time* in project management and make it easy to:
+Good project management *saves time*, making it easy to:
 * revert back to previous versions
 * interact with collaborators working on the same files
 * share your work and have it cited
@@ -82,7 +82,7 @@ Tools/systems to manage changes to files.
 ## You are probably already using version control!
 
 * MS Word has "track changes"
-* Dropbox / Google Drive / OneDrive can show previous versions
+* Dropbox / Google Drive / OneDrive can restore previous versions
 
 ---
 
@@ -92,9 +92,9 @@ GitHub is version control for **projects**.
 
 Use cases:
 * changes that are not in MS Word files
-* find a specific version of the project (with many different files/folders)
+* find a specific version of the project
 * knowing *who* made changes and  *why*
-* multiple collaborators working at the same time
+* multiple collaborators working on the same files at the same time
 ---
 
 # Example scenarios
@@ -125,19 +125,21 @@ class: inverse, center, middle
   - commands have unintuitive names
   - error messages are obscure
 
---
+---
 
 **This workshop does NOT teach you to use Git directly!**
 * check out the [resources page](https://uf-repro.github.io/friendly-github-intro/resources.html) for tutorials, guides, etc.
+
+We will learn essential terms and concepts. We will interact with Git through the [GitHub website](https://github.com/) and the [GitHub Desktop software](https://desktop.github.com/).
 
 ---
 
 # Git Concepts
 
-* In Git, a project is a folder
+* In Git, a project corresponds to a computer folder
   - the folder is called a *repository* or *repo*
   - Git tracks changes to all files and subfolders of that folder
-* Project changes are tracked by taking snapshots:
+* Changes are recorded by taking snapshots of the folder contents:
   - each snapshot is called a *commit* and represents a specific project version
 
 ---
@@ -166,11 +168,12 @@ knitr::include_graphics("commits_example.png")
 
 # Creating Commits
 
-* each commit is constructed *manually*
-  - can be tedious, but gives you precise control over what changes to record
-* `add` files that have changed (including new files)
-  - Git only records changes, so only the changed files need to be noted
-  - one common method is to add all the files in the repo 
+Commits are constructed *manually* - you tell git which changes (since the last version) to include.
+
+This can be tedious, but gives you precise control over what changes to record.
+ - `add` files that have changed (including new files)
+ - Git only records changes (ignoring unchanged files)
+ - one common method is to add all the files in the repo 
 
 ---
 
@@ -179,8 +182,8 @@ knitr::include_graphics("commits_example.png")
 * a cloud platform that hosts Git repos
 * can host unlimited # of *public* and *private* repos
 * size limits:
-  - 1 GB for each repo
-  - 100 MB for individual files
+  - 1 GB for each repo (recommended for performance reasons)
+  - 50 MB for individual files
 * [GitHub Education](https://education.github.com/pack) has some benefits
   - one code for a free t-shirt from https://github.myshopify.com/ to be given away to a random attendee
 
