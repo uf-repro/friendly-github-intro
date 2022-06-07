@@ -1,6 +1,6 @@
-Package: friendlyGithubIntro
+Package: friendly.github.intro
 Title: A Friendly Introduction to Github for Project Version Control
-Version: 1.1.0
+Version: 1.1.1
 Authors@R: 
     person(given = "Hao",
            family = "Ye",
@@ -24,3 +24,4 @@ learningOutcomes: * explain the benefits of version control
  * create and update repositories using Github Desktop and the Github website
  * write descriptive README files
  * select and apply a license to a GitHub project
+X-schema.org-keywords: Open Educational Resources, Research Support Skills, Git, GitHub, Version Control, Workshop

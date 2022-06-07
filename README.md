@@ -27,15 +27,15 @@ programming/git/command-line is required.*
 
 By the end of the workshop, participants will be able to:
 
-  - explain the benefits of version control
-  - articulate the differences between `git` and `Github`
-  - create and update repositories using Github Desktop and the Github
+-   explain the benefits of version control
+-   articulate the differences between `git` and `Github`
+-   create and update repositories using Github Desktop and the Github
     website
-  - write descriptive README files
-  - select and apply a license to a GitHub project
+-   write descriptive README files
+-   select and apply a license to a GitHub project
 
 ## References
 
-  - [“Friendly Github
+-   [“Friendly Github
     Workshop”](https://kirstiejane.github.io/friendly-github-intro/)
     from Kirstie Whitaker
