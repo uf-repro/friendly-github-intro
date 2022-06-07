@@ -17,7 +17,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">A Friendly Introduction to Github for Project Version Control</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.1.1</span>
       </span>
     </div>
 
@@ -59,17 +59,14 @@
     </div>
 
 <div id="syllabus" class="section level1">
-
-<p>Hao Ye Health Science Center Libraries, University of Florida (updated: 2022-02-01)</p>
+<p>Hao Ye Health Science Center Libraries, University of Florida (updated: 2022-06-07)</p>
 <div class="section level2">
 <h2 id="intro">Intro<a class="anchor" aria-label="anchor" href="#intro"></a></h2>
-<ul><li>Motivations Good project management <em>saves time</em>, making it easy to:
-<ul><li>revert back to previous versions</li>
+<ul><li>Motivations Good project management <em>saves time</em>, making it easy to:<ul><li>revert back to previous versions</li>
 <li>interact with collaborators working on the same files</li>
 <li>share your work and have it cited</li>
 </ul></li>
-<li>Learning Outcomes By the end of the workshop, participants will be able to:
-<ul><li>explain the benefits of version control</li>
+<li>Learning Outcomes By the end of the workshop, participants will be able to:<ul><li>explain the benefits of version control</li>
 <li>articulate the differences between <code>git</code> and <code>Github</code>
 </li>
 <li>create and update repositories using Github Desktop and the Github website</li>
@@ -77,73 +74,56 @@
 <li>select and apply a license to a GitHub project</li>
 </ul></li>
 <li>Version Control Concepts</li>
-<li>Version Control Tools/systems to manage changes to files. ## You are probably already using version control!
-<ul><li>MS Word has “track changes”</li>
+<li>Version Control Tools/systems to manage changes to files. ## You are probably already using version control!<ul><li>MS Word has “track changes”</li>
 <li>Dropbox / Google Drive / OneDrive can restore previous versions</li>
 </ul></li>
-<li>What’s special about GitHub? GitHub is version control for <strong>projects</strong>. Use cases:
-<ul><li>changes that are not in MS Word files</li>
+<li>What’s special about GitHub? GitHub is version control for <strong>projects</strong>. Use cases:<ul><li>changes that are not in MS Word files</li>
 <li>find a specific version of the project</li>
 <li>knowing <em>who</em> made changes and <em>why</em>
 </li>
 <li>multiple collaborators working on the same files at the same time</li>
 </ul></li>
-<li>Example scenarios
-<ul><li>You change a histogram to a bar plot, and then you want to change it back.</li>
+<li>Example scenarios<ul><li>You change a histogram to a bar plot, and then you want to change it back.</li>
 <li>Your co-author makes edits while traveling, and you need to combine their changes with changes you made in the meantime.</li>
 <li>You want to experiment with a different dataset / analysis / narrative without duplicating everything. <strong>GitHub helps you do all of these!</strong>
 </li>
 </ul></li>
 <li>Git and GitHub ## (not the same thing!)</li>
-<li>Git
-<ul><li>
+<li>Git<ul><li>
 <code>Git</code> is the name of the software and version control system</li>
-<li>notoriously unfriendly
-<ul><li>commands have unintuitive names</li>
+<li>notoriously unfriendly<ul><li>commands have unintuitive names</li>
 <li>error messages are obscure <strong>This workshop does NOT teach you to use Git directly!</strong>
 </li>
 </ul></li>
 <li>check out the <a href="https://uf-repro.github.io/friendly-github-intro/resources.html" class="external-link">resources page</a> for tutorials, guides, etc. We will learn essential terms and concepts. We will interact with Git through the <a href="https://github.com/" class="external-link">GitHub website</a> and the <a href="https://desktop.github.com/" class="external-link">GitHub Desktop software</a>.</li>
 </ul></li>
-<li>Git Concepts
-<ul><li>In Git, a project corresponds to a computer folder
-<ul><li>the folder is called a <em>repository</em> or <em>repo</em>
+<li>Git Concepts<ul><li>In Git, a project corresponds to a computer folder<ul><li>the folder is called a <em>repository</em> or <em>repo</em>
 </li>
 <li>Git tracks changes to all files and subfolders of that folder</li>
 </ul></li>
-<li>Changes are recorded by taking snapshots of the folder contents:
-<ul><li>each snapshot is called a <em>commit</em> and represents a specific project version <img src="commits_example.png" alt="A screenshot of the website https://github.com/uf-repro/friendly-github-intro/commits/main, showing the commit log for the repo of this lesson. Each commit entry has an associated date and time, the author, and the summary of the commit message."></li>
+<li>Changes are recorded by taking snapshots of the folder contents:<ul><li>each snapshot is called a <em>commit</em> and represents a specific project version <img src="commits_example.png" alt="A screenshot of the website https://github.com/uf-repro/friendly-github-intro/commits/main, showing the commit log for the repo of this lesson. Each commit entry has an associated date and time, the author, and the summary of the commit message."></li></ul></li>
 </ul></li>
-</ul></li>
-<li>About Commits
-<ul><li>each commit has a <em>commit message</em>
-<ul><li>1-line summary (required)</li>
+<li>About Commits<ul><li>each commit has a <em>commit message</em><ul><li>1-line summary (required)</li>
 <li>blank line (optional)</li>
 <li>further details</li>
 </ul></li>
 <li>commits also record <em>who</em> and <em>when</em> (automatically) <img src="commits_example.png" alt="A screenshot of the website https://github.com/uf-repro/friendly-github-intro/commits/main, showing the commit log for the repo of this lesson. Each commit entry has an associated date and time, the author, and the summary of the commit message."></li>
 </ul></li>
-<li>Creating Commits Commits are constructed <em>manually</em> - you tell git which changes (since the last version) to include. This can be tedious, but gives you precise control over what changes to record.
-<ul><li>
+<li>Creating Commits Commits are constructed <em>manually</em> - you tell git which changes (since the last version) to include. This can be tedious, but gives you precise control over what changes to record.<ul><li>
 <code>add</code> files that have changed (including new files)</li>
 <li>Git only records changes (ignoring unchanged files)</li>
 <li>one common method is to add all the files in the repo</li>
 </ul></li>
-<li>GitHub
-<ul><li>a cloud platform that hosts Git repos</li>
+<li>GitHub<ul><li>a cloud platform that hosts Git repos</li>
 <li>can host unlimited # of <em>public</em> and <em>private</em> repos</li>
-<li>size limits:
-<ul><li>1 GB for each repo (recommended for performance reasons)</li>
+<li>size limits:<ul><li>1 GB for each repo (recommended for performance reasons)</li>
 <li>50 MB for individual files</li>
 </ul></li>
 <li>
-<a href="https://education.github.com/pack" class="external-link">GitHub Education</a> has some benefits
-<ul><li>one code for a free t-shirt from <a href="https://github.myshopify.com/" class="external-link uri">https://github.myshopify.com/</a> to be given away to a random attendee</li>
-</ul></li>
+<a href="https://education.github.com/pack" class="external-link">GitHub Education</a> has some benefits<ul><li>one code for a free t-shirt from <a href="https://github.myshopify.com/" class="external-link uri">https://github.myshopify.com/</a> to be given away to a random attendee</li></ul></li>
 </ul></li>
 <li>GitHub in a Web Browser</li>
-<li>Using GitHub <a href="https://github.com" class="external-link uri">https://github.com</a>
-<ul><li>create an account / log in</li>
+<li>Using GitHub <a href="https://github.com" class="external-link uri">https://github.com</a><ul><li>create an account / log in</li>
 <li>create a new repo</li>
 <li>add text files (in browser) or upload files</li>
 <li>write a commit message</li>
@@ -151,55 +131,40 @@
 <li>DEMO</li>
 <li>Using Git Clones</li>
 <li>About Clones If you want to backup files, you can make a copy to another location (external drive, cloud storage, etc.). What about a project folder AND its history? A <strong>git clone</strong> is not just a copy of the project files, but also its entire history.</li>
-<li>Synchronizing Repos
-<ul><li>Git is designed to be decentralized – repos can exist in multiple locations:
-<ul><li>
+<li>Synchronizing Repos<ul><li>Git is designed to be decentralized – repos can exist in multiple locations:<ul><li>
 <em>clone</em> = “make a copy of a Git repo”</li>
 <li>
 <em>push</em> = “send new commits from here to somewhere else”</li>
 <li>
 <em>pull</em> = “retrieve new commits from somewhere else to here”</li>
-</ul></li>
-</ul></li>
-<li>Working with Git clones
-<ul><li>you need the <code>Git</code> software
-<ul><li><a href="https://carpentries.github.io/workshop-template/#git" class="external-link">instructions from Software Carpentry</a></li>
+</ul></li></ul></li>
+<li>Working with Git clones<ul><li>you need the <code>Git</code> software<ul><li><a href="https://carpentries.github.io/workshop-template/#git" class="external-link">instructions from Software Carpentry</a></li>
 <li>
 <a href="https://swcarpentry.github.io/git-novice/" class="external-link">guide to command-line usage</a><br>
 (too advanced for this workshop)</li>
 </ul></li>
 <li>
-<a href="https://desktop.github.com/" class="external-link">GitHub Desktop</a>
-<ul><li>graphical interface for Git</li>
+<a href="https://desktop.github.com/" class="external-link">GitHub Desktop</a><ul><li>graphical interface for Git</li>
 <li>also syncs your computer with GitHub</li>
 </ul></li>
 </ul></li>
 <li>DEMO</li>
 <li>Best Practices for Git Repos</li>
-<li>Readme A <code>README.md</code> file in the primary folder shows on the github webpage for the repo. It should include:
-<ul><li>what the project is about</li>
+<li>Readme A <code>README.md</code> file in the primary folder shows on the github webpage for the repo. It should include:<ul><li>what the project is about</li>
 <li>who is working on it</li>
 <li>who is it for</li>
 <li>installation/usage instructions</li>
 <li>citation info</li>
 </ul></li>
-<li>License A <code>LICENSE</code> file in the top directory describes how other people can <em>use</em> the work.
-<ul><li>by default, in the US, you have full rights on creative works Recommended permissive licenses, based on content type:
-<ul><li>MIT (code)</li>
+<li>License A <code>LICENSE</code> file in the top directory describes how other people can <em>use</em> the work.<ul><li>by default, in the US, you have full rights on creative works Recommended permissive licenses, based on content type:<ul><li>MIT (code)</li>
 <li>CC-BY (non-code)</li>
 <li>CC0 (public-domain, data)</li>
-</ul></li>
-</ul></li>
-<li>Adding a license
-<ul><li>when creating a new repo, you have the option of choosing the template for an existing license</li>
+</ul></li></ul></li>
+<li>Adding a license<ul><li>when creating a new repo, you have the option of choosing the template for an existing license</li>
 <li>on <a href="https://github.com" class="external-link">github.com</a>, adding a file named <code>LICENSE</code> brings up a button: <img src="choose-a-license.gif" alt="An animation of adding a file named LICENSE in the github.com interface, and then being able to click on a Choose a License button"></li>
 </ul></li>
-<li>Markdown
-<ul><li>GitHub will render some common file formats directly in the web browser:
-<ul><li>images, plain text</li>
-</ul></li>
-<li>markdown is preferred for formatting text and images
-<ul><li>uses plain text, but renders nicely</li>
+<li>Markdown<ul><li>GitHub will render some common file formats directly in the web browser:<ul><li>images, plain text</li></ul></li>
+<li>markdown is preferred for formatting text and images<ul><li>uses plain text, but renders nicely</li>
 <li>
 <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" class="external-link">a guide to syntax</a> <img src="markdown_example.png" alt="A screenshot of the website https://github.com/weecology/MATSSdemo/blob/master/analysis/report.md, showing a markdown report with formatted text and embedded figures."></li>
 </ul></li>
@@ -209,9 +174,7 @@
 <h2 id="thanks">Thanks<a class="anchor" aria-label="anchor" href="#thanks"></a></h2>
 <ul><li>Let me know what content you’d like to see</li>
 <li>Contact me for additional questions or consultation requests!</li>
-<li>Check back in on the libguide for more modules and contact info:
-<ul><li><a href="https://guides.uflib.ufl.edu/reproducibility" class="external-link uri">https://guides.uflib.ufl.edu/reproducibility</a></li>
-</ul></li>
+<li>Check back in on the libguide for more modules and contact info:<ul><li><a href="https://guides.uflib.ufl.edu/reproducibility" class="external-link uri">https://guides.uflib.ufl.edu/reproducibility</a></li></ul></li>
 </ul></div>
 </div>
 
@@ -230,7 +193,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.9000.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.9000.</p>
 </div>
 
       </footer></div>
