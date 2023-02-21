@@ -99,7 +99,7 @@
 </ul></li>
 <li>Git Concepts<ul><li>In Git, a project corresponds to a computer folder<ul><li>the folder is called a <em>repository</em> or <em>repo</em>
 </li>
-<li>Git tracks changes to all files and subfolders of that folder</li>
+<li>Git tracks changes to all files and subfolders in that folder</li>
 </ul></li>
 <li>Changes are recorded by taking snapshots of the folder contents:<ul><li>each snapshot is called a <em>commit</em> and represents a specific project version <img src="commits_example.png" alt="A screenshot of the website https://github.com/uf-repro/friendly-github-intro/commits/main, showing the commit log for the repo of this lesson. Each commit entry has an associated date and time, the author, and the summary of the commit message."></li></ul></li>
 </ul></li>
@@ -109,10 +109,15 @@
 </ul></li>
 <li>commits also record <em>who</em> and <em>when</em> (automatically) <img src="commits_example.png" alt="A screenshot of the website https://github.com/uf-repro/friendly-github-intro/commits/main, showing the commit log for the repo of this lesson. Each commit entry has an associated date and time, the author, and the summary of the commit message."></li>
 </ul></li>
-<li>Creating Commits Commits are constructed <em>manually</em> - you tell git which changes (since the last version) to include. This can be tedious, but gives you precise control over what changes to record.<ul><li>
+<li>Creating Commits Commits are constructed <em>manually</em> - you tell git what to include.<ul><li>
 <code>add</code> files that have changed (including new files)</li>
 <li>Git only records changes (ignoring unchanged files)</li>
-<li>one common method is to add all the files in the repo</li>
+<li>one common method is to <code>add</code> all files <em>A commit message is required!</em>
+</li>
+</ul></li>
+<li>Why so tedious?<ul><li>The commit procedure is more work than a simple button press!</li>
+<li>This procedure gives you control over which changes are recorded in each commit<ul><li>if you make edits in multiple files, you can group the changes into meaningful commits</li></ul></li>
+<li>The commit message is important to find correct versions later</li>
 </ul></li>
 <li>GitHub<ul><li>a cloud platform that hosts Git repos</li>
 <li>can host unlimited # of <em>public</em> and <em>private</em> repos</li>
@@ -166,7 +171,7 @@
 <li>Markdown<ul><li>GitHub will render some common file formats directly in the web browser:<ul><li>images, plain text</li></ul></li>
 <li>markdown is preferred for formatting text and images<ul><li>uses plain text, but renders nicely</li>
 <li>
-<a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" class="external-link">a guide to syntax</a> <img src="markdown_example.png" alt="A screenshot of the website https://github.com/weecology/MATSSdemo/blob/master/analysis/report.md, showing a markdown report with formatted text and embedded figures."></li>
+<a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" class="external-link">a guide to syntax</a> <a href="https://github.com/weecology/MATSSdemo/blob/master/analysis/report.md" class="external-link">example report</a> <img src="markdown_example.png" alt="A screenshot of the website https://github.com/weecology/MATSSdemo/blob/master/analysis/report.md, showing a markdown report with formatted text and embedded figures."></li>
 </ul></li>
 </ul></li>
 </ul></div>

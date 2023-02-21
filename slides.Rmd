@@ -138,7 +138,7 @@ We will learn essential terms and concepts. We will interact with Git through th
 
 * In Git, a project corresponds to a computer folder
   - the folder is called a *repository* or *repo*
-  - Git tracks changes to all files and subfolders of that folder
+  - Git tracks changes to all files and subfolders in that folder
 * Changes are recorded by taking snapshots of the folder contents:
   - each snapshot is called a *commit* and represents a specific project version
 
@@ -168,12 +168,20 @@ knitr::include_graphics("commits_example.png")
 
 # Creating Commits
 
-Commits are constructed *manually* - you tell git which changes (since the last version) to include.
-
-This can be tedious, but gives you precise control over what changes to record.
+Commits are constructed *manually* - you tell git what to include.
  - `add` files that have changed (including new files)
  - Git only records changes (ignoring unchanged files)
- - one common method is to add all the files in the repo 
+ - one common method is to `add` all files
+ 
+*A commit message is required!*
+
+---
+# Why so tedious?
+
+* The commit procedure is more work than a simple button press!
+* This procedure gives you control over which changes are recorded in each commit
+  - if you make edits in multiple files, you can group the changes into meaningful commits
+* The commit message is important to find correct versions later
 
 ---
 
@@ -307,6 +315,8 @@ knitr::include_graphics("choose-a-license.gif")
   - [a guide to syntax](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ---
+
+[example report](https://github.com/weecology/MATSSdemo/blob/master/analysis/report.md)
 
 ```{r, echo = FALSE, fig.cap = "A screenshot of the website https://github.com/weecology/MATSSdemo/blob/master/analysis/report.md, showing a markdown report with formatted text and embedded figures."}
 knitr::include_graphics("markdown_example.png")
