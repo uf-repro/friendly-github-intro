@@ -1,7 +1,7 @@
 ---
 title: "`r desc::desc_get('Title', '..')`"
-author: "Hao Ye"
-institute: "Health Science Center Libraries, University of Florida"
+author: "Natya Hans, Informatics and Reproducibility Librarian"
+institute: "Academic Research Consulting and Services, University of Florida"
 date: "(updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
@@ -326,6 +326,7 @@ knitr::include_graphics("markdown_example.png")
 
 # Thanks
 
+* Original slides created by Hao Ye, modified by Natya Hans
 * Let me know what content you'd like to see
 * Contact me for additional questions or consultation requests!
 * Check back in on the libguide for more modules and contact info:
